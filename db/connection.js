@@ -10,12 +10,5 @@ const db = await mysql.createConnection({
   port: process.env.DB_PORT || 3306,
 });
 
-console.log({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  database: process.env.DB_NAME,
-  port: process.env.DB_PORT,
-});
-
 console.log("✅ Connected to MySQL database");
 export default db;
